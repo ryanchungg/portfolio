@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="740" viewBox="0 0 1680 740">
+<defs><marker id="head" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#52647b"/></marker></defs>
+<rect x="2" y="2" width="1676" height="736" rx="18" fill="#ffffff" stroke="#c9d3df" stroke-width="2"/>
+<text x="50" y="72" fill="#19263a" font-family="Arial" font-size="40" font-weight="700" letter-spacing="-2.2">Sift system architecture</text>
+<text x="51" y="111" fill="#47596f" font-family="Arial" font-size="21" font-weight="400">Asynchronous PDF extraction into caller-defined JSON</text>
+<rect x="50" y="391" width="185" height="108" rx="12" fill="#f3f6fa" stroke="#9baabd" stroke-width="2"/>
+<text x="66" y="426" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">API client</text>
+<text x="66" y="454" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Uploads PDFs</text>
+<text x="66" y="476" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Polls for results</text>
+<rect x="368" y="391" width="238" height="108" rx="12" fill="#eaf2ff" stroke="#7298ca" stroke-width="2"/>
+<text x="384" y="426" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">FastAPI</text>
+<text x="384" y="454" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">API-key authentication</text>
+<text x="384" y="476" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Validates PDF and schema</text>
+<rect x="711" y="166" width="258" height="108" rx="12" fill="#f3f6fa" stroke="#9baabd" stroke-width="2"/>
+<text x="727" y="201" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Redis</text>
+<text x="727" y="229" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Auth cache and rate limits</text>
+<text x="727" y="251" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Celery broker and task results</text>
+<rect x="1074" y="391" width="238" height="108" rx="12" fill="#eaf2ff" stroke="#7298ca" stroke-width="2"/>
+<text x="1090" y="426" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Celery worker</text>
+<text x="1090" y="454" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Extracts PDF data</text>
+<text x="1090" y="476" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Validates returned JSON</text>
+<rect x="711" y="391" width="258" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="727" y="426" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Supabase Postgres</text>
+<text x="727" y="454" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Client keys, jobs and results</text>
+<text x="727" y="476" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Page and token usage</text>
+<rect x="711" y="586" width="258" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="727" y="621" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Supabase Storage</text>
+<text x="727" y="649" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Uploaded PDF files</text>
+<text x="727" y="671" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">extractions bucket</text>
+<rect x="1445" y="391" width="185" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="1461" y="426" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Google Gemini</text>
+<text x="1461" y="454" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Multimodal extraction</text>
+<text x="1461" y="476" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Structured JSON</text>
+<rect x="1445" y="586" width="185" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="1461" y="621" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Resend</text>
+<text x="1461" y="649" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Optional job emails</text>
+<text x="1461" y="671" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Success or failure</text>
+<polyline points="240,424 363,424" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="363,468 240,468" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="486,386 486,220 706,220" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)" marker-start="url(#head)"/>
+<polyline points="974,220 1193,220 1193,386" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)" marker-start="url(#head)"/>
+<polyline points="611,444 706,444" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="1069,444 974,444" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="486,504 486,640 706,640" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="1193,504 1193,640 974,640" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="1317,424 1440,424" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="1440,468 1317,468" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)"/>
+<polyline points="1317,488 1378,488 1378,640 1440,640" fill="none" stroke="#52647b" stroke-width="2" marker-end="url(#head)" stroke-dasharray="7 5"/>
+<text x="253" y="416" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">POST / GET</text>
+<text x="253" y="488" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">202 / status</text>
+<text x="525" y="207" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Enqueue job ID</text>
+<text x="525" y="247" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Auth cache · RPM</text>
+<text x="1021" y="207" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Consume task</text>
+<text x="1021" y="247" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Task results</text>
+<text x="618" y="433" fill="#47596f" font-family="Arial" font-size="15" font-weight="400">Read/write</text>
+<text x="980" y="433" fill="#47596f" font-family="Arial" font-size="15" font-weight="400">Read/write</text>
+<text x="535" y="628" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Upload PDF</text>
+<text x="1016" y="628" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Download PDF</text>
+<text x="1325" y="413" fill="#47596f" font-family="Arial" font-size="15" font-weight="400">PDF + schema</text>
+<text x="1325" y="487" fill="#47596f" font-family="Arial" font-size="15" font-weight="400">JSON + tokens</text>
+<text x="1390" y="568" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">If configured</text>
+</svg>

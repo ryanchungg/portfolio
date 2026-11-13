@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="700" viewBox="0 0 1680 700">
+<rect x="2" y="2" width="1676" height="696" rx="18" fill="#ffffff" stroke="#c9d3df" stroke-width="2"/>
+<text x="56" y="69" fill="#19263a" font-family="Arial" font-size="37" font-weight="700">LockedIn system architecture</text>
+<text x="57" y="104" fill="#47596f" font-family="Arial" font-size="20" font-weight="400">Group accountability, multi-group check-ins, and peer voting</text>
+<rect x="65" y="346" width="326" height="108" rx="12" fill="#eaf2ff" stroke="#7298ca" stroke-width="2"/>
+<text x="81" y="381" fill="#19263a" font-family="Arial" font-size="23" font-weight="700">React Native app</text>
+<text x="81" y="409" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Expo 57 · TypeScript</text>
+<text x="81" y="431" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Groups, feed, goals and profile</text>
+<rect x="65" y="545" width="326" height="108" rx="12" fill="#f3f6fa" stroke="#9baabd" stroke-width="2"/>
+<text x="81" y="580" fill="#19263a" font-family="Arial" font-size="23" font-weight="700">AsyncStorage</text>
+<text x="81" y="608" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Persists the Supabase session</text>
+<rect x="610" y="155" width="326" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="626" y="190" fill="#19263a" font-family="Arial" font-size="23" font-weight="700">Supabase Auth</text>
+<text x="626" y="218" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Email and password</text>
+<text x="626" y="240" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Issues and refreshes sessions</text>
+<rect x="610" y="346" width="326" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="626" y="381" fill="#19263a" font-family="Arial" font-size="23" font-weight="700">Supabase Data API</text>
+<text x="626" y="409" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Direct queries and RPC calls</text>
+<text x="626" y="431" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Authenticated user session</text>
+<rect x="1223" y="155" width="386" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="1239" y="190" fill="#19263a" font-family="Arial" font-size="23" font-weight="700">PostgreSQL functions</text>
+<text x="1239" y="218" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Create / join groups · log check-ins</text>
+<text x="1239" y="240" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Record kick votes and remove targets</text>
+<rect x="1223" y="346" width="386" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="1239" y="381" fill="#19263a" font-family="Arial" font-size="23" font-weight="700">Supabase Postgres</text>
+<text x="1239" y="409" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Profiles, groups, members and goals</text>
+<text x="1239" y="431" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Activities, check-ins and kick votes</text>
+<polyline points="396,365 492,365 492,209 605,209" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="605,209 596.0,205.0 596.0,213.0" fill="#52647b"/>
+<polygon points="396,365 405.0,369.0 405.0,361.0" fill="#52647b"/>
+<polyline points="228,459 228,540" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="228,540 232.0,531.0 224.0,531.0" fill="#52647b"/>
+<polygon points="228,459 224.0,468.0 232.0,468.0" fill="#52647b"/>
+<polyline points="396,418 605,418" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="605,418 596.0,414.0 596.0,422.0" fill="#52647b"/>
+<polygon points="396,418 405.0,422.0 405.0,414.0" fill="#52647b"/>
+<polyline points="941,365 1078,365 1078,209 1218,209" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1218,209 1209.0,205.0 1209.0,213.0" fill="#52647b"/>
+<polyline points="941,418 1218,418" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1218,418 1209.0,414.0 1209.0,422.0" fill="#52647b"/>
+<polygon points="941,418 950.0,422.0 950.0,414.0" fill="#52647b"/>
+<polyline points="941,177 994,177 994,300 1180,300 1180,372 1218,372" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1218,372 1209.0,368.0 1209.0,376.0" fill="#52647b"/>
+<polyline points="1416,268 1416,341" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1416,341 1420.0,332.0 1412.0,332.0" fill="#52647b"/>
+<text x="500" y="196" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Sign in / sign up</text>
+<text x="246" y="501" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Restore session</text>
+<text x="414" y="406" fill="#47596f" font-family="Arial" font-size="17" font-weight="400">Supabase JS SDK</text>
+<text x="1092" y="196" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Invoke group actions</text>
+<text x="970" y="444" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Table access with RLS</text>
+<text x="1008" y="322" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Signup trigger creates profile</text>
+<text x="1431" y="304" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Apply changes</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="790" viewBox="0 0 1680 790">
+<rect x="2" y="2" width="1676" height="786" rx="18" fill="#ffffff" stroke="#c9d3df" stroke-width="2"/>
+<text x="50" y="71" fill="#19263a" font-family="Arial" font-size="40" font-weight="700" letter-spacing="-2.2">Fetch system architecture</text>
+<text x="51" y="111" fill="#47596f" font-family="Arial" font-size="21" font-weight="400">Batch ingestion of card-alert emails into Supabase</text>
+<text x="50" y="175" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Runtime</text>
+<rect x="50" y="306" width="200" height="108" rx="12" fill="#f3f6fa" stroke="#9baabd" stroke-width="2"/>
+<text x="66" y="341" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Bank</text>
+<text x="66" y="369" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Card alert emails</text>
+<rect x="395" y="306" width="205" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="411" y="341" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Gmail inbox</text>
+<text x="411" y="369" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">IMAP over TLS</text>
+<text x="411" y="391" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Bank sender filter</text>
+<rect x="765" y="306" width="286" height="108" rx="12" fill="#eaf2ff" stroke="#7298ca" stroke-width="2"/>
+<text x="781" y="341" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Cloud Run Job</text>
+<text x="781" y="369" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Docker runs fetch.py</text>
+<text x="781" y="391" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Batches up to 10 new emails</text>
+<rect x="765" y="149" width="286" height="108" rx="12" fill="#f3f6fa" stroke="#9baabd" stroke-width="2"/>
+<text x="781" y="184" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Daily execution</text>
+<text x="781" y="212" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Cadence described in README</text>
+<text x="781" y="234" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Trigger configuration unverified</text>
+<rect x="1294" y="248" width="270" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="1310" y="283" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Google Gemini</text>
+<text x="1310" y="311" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Classifies alerts</text>
+<text x="1310" y="333" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Extracts transaction fields</text>
+<rect x="1294" y="444" width="270" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="1310" y="479" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Supabase Postgres</text>
+<text x="1310" y="507" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">emails table</text>
+<text x="1310" y="529" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Upserts by message_id</text>
+<rect x="1294" y="637" width="270" height="108" rx="12" fill="#f3f6fa" stroke="#9baabd" stroke-width="2"/>
+<text x="1310" y="672" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Supabase dashboard</text>
+<text x="1310" y="700" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">View stored records</text>
+<text x="50" y="601" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Deployment</text>
+<rect x="50" y="637" width="234" height="108" rx="12" fill="#eaf2ff" stroke="#7298ca" stroke-width="2"/>
+<text x="66" y="672" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">GitHub Actions</text>
+<text x="66" y="700" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Push to main</text>
+<text x="66" y="722" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Google Cloud auth via WIF</text>
+<rect x="455" y="637" width="255" height="108" rx="12" fill="#eaf7f0" stroke="#78a58a" stroke-width="2"/>
+<text x="471" y="672" fill="#19263a" font-family="Arial" font-size="23" font-weight="700" letter-spacing="-0.58">Artifact Registry</text>
+<text x="471" y="700" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Docker image</text>
+<text x="471" y="722" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Tagged with commit SHA</text>
+<polyline points="255,360 390,360" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="390,360 381.0,356.0 381.0,364.0" fill="#52647b"/>
+<polyline points="760,360 605,360" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="605,360 614.0,364.0 614.0,356.0" fill="#52647b"/>
+<polygon points="760,360 751.0,356.0 751.0,364.0" fill="#52647b"/>
+<polyline points="908,262 908,301" fill="none" stroke="#52647b" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="908,301 912.0,292.0 904.0,292.0" fill="#52647b"/>
+<polyline points="1056,326 1289,326" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1289,326 1280.0,322.0 1280.0,330.0" fill="#52647b"/>
+<polygon points="1056,326 1065.0,330.0 1065.0,322.0" fill="#52647b"/>
+<polyline points="1056,386 1165,386 1165,498 1289,498" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1289,498 1280.0,494.0 1280.0,502.0" fill="#52647b"/>
+<polygon points="1056,386 1065.0,390.0 1065.0,382.0" fill="#52647b"/>
+<polyline points="1429,632 1429,557" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="1429,557 1425.0,566.0 1433.0,566.0" fill="#52647b"/>
+<polyline points="289,691 450,691" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="450,691 441.0,687.0 441.0,695.0" fill="#52647b"/>
+<polyline points="715,691 908,691 908,419" fill="none" stroke="#52647b" stroke-width="2"/>
+<polygon points="908,419 904.0,428.0 912.0,428.0" fill="#52647b"/>
+<text x="264" y="348" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Delivers alerts</text>
+<text x="617" y="348" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Search and fetch</text>
+<text x="617" y="383" fill="#47596f" font-family="Arial" font-size="15" font-weight="400">2-day lookback</text>
+<text x="1071" y="314" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Email bodies + IDs</text>
+<text x="1071" y="350" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Structured JSON</text>
+<text x="1180" y="460" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Look up IDs</text>
+<text x="1180" y="486" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Batch upsert</text>
+<text x="1444" y="599" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Read records</text>
+<text x="310" y="678" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Build and push</text>
+<text x="925" y="652" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">Workflow deploys</text>
+<text x="925" y="675" fill="#47596f" font-family="Arial" font-size="16" font-weight="400">the tagged image</text>
+</svg>
